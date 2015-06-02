@@ -1,0 +1,24 @@
+%section.sign_in.container
+  .row
+    .col-sm-10.col-sm-offset-1
+      %header
+        %h1#signin-text Sign in
+      .sign_in
+        %fieldset
+          = form_tag login_path do
+            .form-group
+              = label_tag :email, "Email Address" 
+              .row
+                .col-sm-4
+                  = text_field_tag :email, nil, class: 'form-control'
+            .form-group
+              = label_tag :password, "Password"
+              .row
+                .col-sm-4
+                  = password_field_tag :password, nil, class: 'form-control'
+              %fieldset.form-group.action
+                %br
+                %input(type="submit" value="Sign in" class="btn btn-default")
+                = link_to "Forgot Password?", forgot_password_path
+
+

@@ -1,0 +1,12 @@
+This Rails application is a clone of a subscription-based video streaming service.
+Features customizable video watch queue, social networking, and invite-a-friend recruitment.
+
+Built with Rails 4.1.1 and uses Ruby 2.1.5.
+
+Tests utilize RSpec, Capybara and Selenium.
+
+Uses Stripe for payment processing and AWS S3 (Fog) for file storage.
+
+
+This was the major project at Tealeaf Academy.
+
